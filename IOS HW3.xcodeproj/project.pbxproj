@@ -18,6 +18,8 @@
 		4B6CDF562533609200D8ADCD /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6CDF552533609200D8ADCD /* CharacterRowView.swift */; };
 		4B6CDF5B253360BA00D8ADCD /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6CDF5A253360BA00D8ADCD /* CharacterView.swift */; };
 		4B6CDF60253360DA00D8ADCD /* CharDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6CDF5F253360DA00D8ADCD /* CharDetailView.swift */; };
+		4BC90FB9253B37640057F720 /* crayonfont in Resources */ = {isa = PBXBuildFile; fileRef = 4BC90FB8253B37640057F720 /* crayonfont */; };
+		4BDE7A2B25387E0900635CE5 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE7A2A25387E0900635CE5 /* AlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		4B6CDF552533609200D8ADCD /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
 		4B6CDF5A253360BA00D8ADCD /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		4B6CDF5F253360DA00D8ADCD /* CharDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDetailView.swift; sourceTree = "<group>"; };
+		4BC90FB8253B37640057F720 /* crayonfont */ = {isa = PBXFileReference; lastKnownFileType = folder; path = crayonfont; sourceTree = "<group>"; };
+		4BDE7A2A25387E0900635CE5 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				4B6CDF1D25335FD300D8ADCD /* IOS_HW3App.swift */,
+				4BC90FB8253B37640057F720 /* crayonfont */,
 				4B6CDF1F25335FD300D8ADCD /* ContentView.swift */,
 				4B6CDF4B2533602900D8ADCD /* AppView.swift */,
+				4BDE7A2A25387E0900635CE5 /* AlbumView.swift */,
 				4B6CDF502533606600D8ADCD /* Struct.swift */,
 				4B6CDF552533609200D8ADCD /* CharacterRowView.swift */,
 				4B6CDF5A253360BA00D8ADCD /* CharacterView.swift */,
@@ -248,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BC90FB9253B37640057F720 /* crayonfont in Resources */,
 				4B6CDF2525335FD500D8ADCD /* Preview Assets.xcassets in Resources */,
 				4B6CDF2225335FD500D8ADCD /* Assets.xcassets in Resources */,
 			);
@@ -280,6 +287,7 @@
 				4B6CDF1E25335FD300D8ADCD /* IOS_HW3App.swift in Sources */,
 				4B6CDF4C2533602900D8ADCD /* AppView.swift in Sources */,
 				4B6CDF60253360DA00D8ADCD /* CharDetailView.swift in Sources */,
+				4BDE7A2B25387E0900635CE5 /* AlbumView.swift in Sources */,
 				4B6CDF562533609200D8ADCD /* CharacterRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

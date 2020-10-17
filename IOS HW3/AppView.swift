@@ -19,11 +19,15 @@ struct AppView: View {
                 CharacterView()
                     .tabItem{
                         Image(systemName:"person.3.fill")
-                        Text("角色介紹")
+                        Text("人物介紹")
                 }
-                
+                AlbumView()
+                    .tabItem{
+                        Image(systemName:"music.note")
+                        Text("專輯")
+                    }
             }
-            .accentColor(.purple)
+            
             
         }
     }

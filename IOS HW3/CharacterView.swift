@@ -22,7 +22,7 @@ struct CustomeHeader: View {
                     .foregroundColor(Color.black)
                 Spacer()
             }
-            .frame(width: 370)
+            .frame(width: 300)
             Spacer()
         }.frame(width:410, height: 33)
     }
@@ -44,14 +44,9 @@ struct CharacterView: View {
                         NavigationLink(destination: CharDetailView(Char: fans[index])){
                             CharacterRowView(Char: fans[index])
                         }}}
-                    
-                
-                    
-                
             }
-            
         }
-        .navigationBarTitle("角色介紹")
+        .navigationBarTitle("人物介紹")
         .padding(.bottom,80)
     }
 }

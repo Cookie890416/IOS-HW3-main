@@ -12,11 +12,9 @@ struct CharDetailView: View {
     var body: some View {
         ScrollView{
             VStack{
-                Image(Char.Ch_name)
-                    .resizable()
-                    .frame(width:400, height:400)
+                Singername(Char:Char)
                 Spacer()
-                Text("角色簡介")
+                Text("人物簡介")
                     .font(.title)
                 Spacer()
                 Text(Char.Intro)
@@ -35,3 +33,12 @@ struct CharDetailView_Previews: PreviewProvider {
     }
 }
 
+
+struct Singername: View {
+    var Char : characters
+    var body: some View {
+        Image(Char.Ch_name)
+            .resizable()
+            .frame(width:400, height:400)
+    }
+}
