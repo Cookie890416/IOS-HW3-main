@@ -15,23 +15,30 @@ struct AppView: View {
                     .tabItem{
                         Image(systemName:"house.fill")
                         Text("主頁")
-                }
+                        
+                    }
                 CharacterView()
                     .tabItem{
                         Image(systemName:"person.3.fill")
                         Text("人物介紹")
-                }
+                    }
                 AlbumView()
                     .tabItem{
                         Image(systemName:"music.note")
                         Text("專輯")
                     }
+                FamousSayView()
+                    .tabItem{
+                        Image(systemName:"message")
+                        Text("名言")
+                    }
             }
-            
-            
+            Music()
+                .offset(y:290)
         }
     }
 }
+
 
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {

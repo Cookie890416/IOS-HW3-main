@@ -6,45 +6,50 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     @State private var show = false
-    @State private var message = "I love MayDay"
     var body: some View {
-            VStack {
-                Text("五月天").font(.system(size:40)).fontWeight(.heavy).underline()+Text("May Day").font(.system(size:32)).fontWeight(.heavy).italic()
-                VStack{
-                    if show{
-                        ImageView()
-                            .transition(.opacity)
-                    }
-                }.animation(.easeInOut(duration:5))
-                    .onAppear {
-                        self.show = true
+        VStack {
+            Text("五月天").font(.system(size:40)).fontWeight(.heavy).underline()+Text("May Day").font(.system(size:32)).fontWeight(.heavy).italic()
+            
+            VStack{
+                if show{
+                    ImageView()
+                        .transition(.opacity)
                 }
-                .onDisappear {
-                    self.show = false
-                }
-                Text("留言板").foregroundColor(Color("黛綠"))
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.purple)
-                    .font(.system(size:32))
-                TextEditor(text: $message)
-                    .frame(width: 150, height: 50)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2))
-                
-                Text("「摸不到的顏色是否叫彩虹」\n「看不到的擁抱是否叫做微風」\n「一個人想著一個人是否就叫寂寞」")
-                    
-                    .fontWeight(.heavy)
-                    .multilineTextAlignment(.center)
-                    .padding()
-                       .background(LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.green]), startPoint: .leading, endPoint: .trailing))
-                    .cornerRadius(30)
-                Spacer()
-                    .padding(.bottom,0)
+            }.animation(.easeInOut(duration:5))
+            .onAppear {
+                self.show = true
             }
-            .foregroundColor(Color.blue)
-            .offset(y:60)
+            .onDisappear {
+                self.show = false
+            }
+            Text("留言板").foregroundColor(Color("黛綠"))
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.purple)
+                .font(.system(size:32))
+            TextEditor(text: .constant("""
+            怎麼去擁有 一道彩虹
+            怎麼去擁抱 一夏天的風
+            天上的星星 笑地上的人
+            總是不能懂 不能覺得足夠
+            """
+            ))
+            .frame(width: 150, height: 50)
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2))
+            
+            Text("「摸不到的顏色是否叫彩虹」\n「看不到的擁抱是否叫做微風」\n「一個人想著一個人是否就叫寂寞」")
+                
+                .fontWeight(.heavy)
+                .multilineTextAlignment(.center)
+                .padding()
+                .background(LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.green]), startPoint: .leading, endPoint: .trailing))
+                .cornerRadius(30)
+            Spacer()
+            .padding(.bottom,0)
+        }
+        .foregroundColor(Color.blue)
+        .offset(y:60)
         
     }
 }
